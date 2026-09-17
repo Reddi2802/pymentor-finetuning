@@ -1,0 +1,12 @@
+torch
+transformers>=4.45
+datasets
+peft
+accelerate
+bitsandbytes
+trl
+gradio
+pandas
+matplotlib
+scikit-learn
+sentencepiece
