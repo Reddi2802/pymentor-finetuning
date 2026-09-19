@@ -1,22 +1,11 @@
-# Python
 __pycache__/
 *.py[cod]
-
-# Virtual environment
 .venv/
-
-# Model files and training outputs
 outputs/
 checkpoints/
-adapter_model/
 *.safetensors
-
-# Environment/secrets
+*.bin
 .env
-
-# Jupyter temporary files
 .ipynb_checkpoints/
-
-# OS files
 .DS_Store
 Thumbs.db
