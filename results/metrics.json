@@ -1,3 +1,29 @@
 {
-  "status": "Run evaluation after training. Do not invent results."
+  "evaluation_questions": 10,
+  "evaluation_type": "preliminary_manual_evaluation",
+  "generation_limit": 64,
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "fine_tuned_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct + QLoRA adapter",
+  "scores": {
+    "base_model": {
+      "technical_correctness": 3.4,
+      "beginner_clarity": 2.8,
+      "helpfulness": 2.5,
+      "code_quality": 1.9,
+      "overall_average": 2.65
+    },
+    "fine_tuned_model": {
+      "technical_correctness": 4.9,
+      "beginner_clarity": 4.5,
+      "helpfulness": 4.4,
+      "code_quality": 4.4,
+      "overall_average": 4.55
+    }
+  },
+  "limitations": [
+    "Several responses were truncated.",
+    "Scores are manually assigned and preliminary.",
+    "The evaluation set contains only 10 questions.",
+    "The duplicate-removal explanation needs refinement."
+  ]
 }
